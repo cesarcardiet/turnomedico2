@@ -1,0 +1,52 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+// This is a placeholder to show what I'm about to write to the files using multiple write_to_file calls.
+// I will not actually run this script, but use it as a reference for the content.
+
+/*
+Speciality:
+protected $fillable = ['name', 'slug', 'icon'];
+public function doctorProfiles() { return $this->hasMany(DoctorProfile::class); }
+
+DoctorProfile:
+protected $fillable = ['user_id', 'speciality_id', 'about', 'clinic_address', 'phone_number', 'services', 'working_hours', 'rating', 'is_approved', 'is_active', 'latitude', 'longitude'];
+protected $casts = ['services' => 'array'];
+public function user() { return $this->belongsTo(User::class); }
+public function speciality() { return $this->belongsTo(Speciality::class); }
+public function timeSlots() { return $this->hasMany(TimeSlot::class); }
+public function appointments() { return $this->hasMany(Appointment::class); }
+public function reviews() { return $this->hasMany(Review::class); }
+
+MembershipPlan:
+protected $fillable = ['name', 'description', 'price', 'duration_days', 'is_active'];
+public function subscriptions() { return $this->hasMany(Subscription::class); }
+
+Subscription:
+protected $fillable = ['user_id', 'membership_plan_id', 'starts_at', 'ends_at', 'payment_status', 'payment_method', 'payment_proof'];
+public function user() { return $this->belongsTo(User::class); }
+public function membershipPlan() { return $this->belongsTo(MembershipPlan::class); }
+
+TimeSlot:
+protected $fillable = ['doctor_profile_id', 'date', 'start_time', 'end_time', 'is_booked'];
+public function doctorProfile() { return $this->belongsTo(DoctorProfile::class); }
+
+Appointment:
+protected $fillable = ['user_id', 'doctor_profile_id', 'time_slot_id', 'problem_description', 'status', 'payment_status', 'payment_method'];
+public function user() { return $this->belongsTo(User::class); }
+public function doctorProfile() { return $this->belongsTo(DoctorProfile::class); }
+public function timeSlot() { return $this->belongsTo(TimeSlot::class); }
+
+Review:
+protected $fillable = ['user_id', 'doctor_profile_id', 'rating', 'comment'];
+public function user() { return $this->belongsTo(User::class); }
+public function doctorProfile() { return $this->belongsTo(DoctorProfile::class); }
+
+Complaint:
+protected $fillable = ['user_id', 'message', 'status'];
+public function user() { return $this->belongsTo(User::class); }
+*/
